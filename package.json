@@ -1,0 +1,22 @@
+{
+  "name": "NodeJS Init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardorcamargo/node-init.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Leonardo Romano Camargo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardorcamargo/node-init/issues"
+  },
+  "homepage": "https://github.com/leonardorcamargo/node-init#readme"
+}
