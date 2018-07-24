@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 app.use((req, res, next) => {
 	console.log('Will run before any route');
-	next();
+	next(new Error('failed!'));
 });
 
 app.use('/users',(req, res, next) => {
@@ -18,6 +18,11 @@ app.use('/users',(req, res, next) => {
 app.get('/', (req, res) => {
 	console.log('Route / called')
 	res.send('Hello World!');
+});
+
+app.use((err, req, res, next) => {
+	console.log('Something goes wrong!');
+	res.status(500).send(err.message);
 });
 
 app.get('/users', (req, res) => {
